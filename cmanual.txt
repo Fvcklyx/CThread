@@ -1,0 +1,24 @@
+1. Ada user dan admin
+2. User bisa memposting judul dan text singkat
+3. User bisa CRUD postingan
+4. User bisa arsip postingan
+5. User bisa liat semua post user lain yg public
+6. User bisa reply postingan
+7. Login register user
+
+Halaman e 
+1. Beranda (semua post public) 
+2. Profile & Post
+3. Post management (Public and Archive) 
+4. Admin (All user and post management)
+5. Login register
+
+Elemen UI | Warna Hex | Keterangan
+Latar belakang utama | #343541 | Background chat
+Latar belakang kotak chat | #444654 | Bubble bot
+Latar belakang user | #1e1e1e - #202123 | Bubble user
+Teks utama | #ffffff | Teks putih
+Teks sekunder | #d1d5db | Deskripsi, teks tambahan
+Garis batas / border | #3e3f4b | Divider / batas antar komponen
+Link | #10a37f | Tautan aktif
+Aksen hijau GPT | #19c37d | Warna brand GPT (misalnya ikon)

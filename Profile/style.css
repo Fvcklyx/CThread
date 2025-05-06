@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1e1e1e;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: sticky;
+  -webkit-sticky: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #1e1e1e;
+  box-shadow: 0 5px 5px #000000;
+}
+
+img {
+  width: 100%;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  background-color: transparent;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 0.4rem 0 0.2rem 0;
+}
+
+textarea {
+  background-color: #ffffff25;
+  border: 2px solid #d1d5db;
+  color: #d1d5db;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+#hide {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#visible {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#barsButt {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: all 0 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+
+.profil {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.profil .menu {
+  color: #c5c7ca;
+}
+
+.profil .menu:hover {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem 3rem 2rem;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+section .card {
+  align-items: center;
+  background-color: #202123;
+  border: 5px solid #d1d5db;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #000;
+  padding: 3rem;
+  margin: 5rem 5rem 0 5rem;
+}
+
+.card p {
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p input {
+  width: 100%;
+  color: #d1d5db;
+  font-size: 0.85rem;
+}
+
+.card p input:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.card p select {
+  background-color: #ffffff80;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+  border: 2px solid #c7c7c7;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.card p select:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.card p textarea {
+  margin-top: 0.5rem;
+  line-height: 1.25rem;
+}
+
+.card .identity h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card .identity h5 {
+  width: 100%;
+  color: #d1d5db;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.logout,
+.edit,
+.save,
+.back {
+  background-color: #d1d5db;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit,
+.save {
+  margin: 1.25rem 0 1rem 0;
+}
+
+.edit:hover,
+.save:hover {
+  background-color: #ffffff80;
+  border-radius: 5px;
+}
+
+.logout:hover,
+.back:hover {
+  background-color: #ff2222;
+  border-radius: 5px;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+section .add {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.add .line {
+  width: 40%;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.add .new {
+  background-color: transparent;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section .contentT {
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+section .contentT:hover {
+  background-color: #2e2e2e;
+  border-color: #d1d5db;
+}
+
+section .contentT h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section .contentT h2:hover {
+  color: #c6cad1;
+}
+
+section .contentT p {
+  margin-top: 1rem;
+  color: #d1d5db;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+section .contentT h6 {
+  margin-top: 1rem;
+  color: #d1d5db;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section .contentT .buttonT {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+section .contentT .editThread,
+section .contentT .deleteThread {
+  background-color: #d1d5db;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 7.5rem;
+  text-align: center;
+  border: none;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+section .contentT .editThread:hover {
+  background-color: #ffffff80;
+  border-radius: 5px;
+}
+
+section .contentT .deleteThread:hover {
+  background-color: #ff2222;
+  border-radius: 5px;
+}
+
+section .emptyCard {
+  display: flex;
+  justify-content: center;
+  color: #c6cad1;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination a {
+  color: #c6cad1;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.pagination strong {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  width: 600px;
+  align-items: center;
+  background-color: #202123;
+  border: 5px solid #d1d5db;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #000;
+  padding: 3rem;
+  margin: 5rem 5rem 0 5rem;
+}
+
+.modal-content .inputT {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.modal-content .inputT p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.modal-content .inputT label {
+  color: #c6cad1;
+  font-weight: 400;
+  margin: 0.5rem 0 0 0;
+}
+
+.modal-content .inputT input {
+  color: #c6cad1;
+  font-weight: 400;
+}
+
+.modal-content .inputT input:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.modal-content .inputT textarea {
+  margin-top: 0.5rem;
+  line-height: 1.25rem;
+}
+
+.submitModal,
+.backModal {
+  background-color: #d1d5db;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitModal {
+  margin: 1rem 0 1rem 0;
+}
+
+.submitModal:hover {
+  background-color: #ffffff80;
+  border-radius: 5px;
+}
+
+.backModal:hover {
+  background-color: #ff2222;
+  border-radius: 5px;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+@media (width < 600px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+
+  .logo {
+    max-width: 70px;
+  }
+
+  #hide {
+    position: fixed;
+    top: 6.45rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 5px #000000;
+    transition: all 0.3 ease;
+    gap: 4rem;
+  }
+
+  #visible {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    margin-bottom: 0.25rem;
+    font-size: 2.25rem;
+  }
+
+  header h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem 1rem 2rem;
+  }
+
+  section h1 {
+    font-size: 1.5rem;
+  }
+
+  section .card {
+    padding: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card p input {
+    width: 100%;
+    color: #d1d5db;
+    font-size: 0.8rem;
+  }
+
+  .card p select {
+    font-size: 0.8rem;
+  }
+
+  .card .identity h3 {
+    font-size: 1.25rem;
+  }
+
+  .card .identity h5 {
+    font-size: 0.9rem;
+  }
+
+  section .contentT h2 {
+    font-size: 1.25rem;
+  }
+
+  section .contentT p {
+    font-size: 0.9rem;
+  }
+
+  section .contentT h6 {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+  section .contentT .editThread,
+  section .contentT .deleteThread {
+    font-size: 0.8rem;
+  }
+
+  section .emptyCard {
+    font-size: 1rem;
+  }
+
+  .pagination a {
+    font-size: 0.9rem;
+  }
+
+  .pagination strong {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .modal-content {
+    padding: 2rem;
+    margin: 5rem 2rem 0 2rem;
+  }
+
+  .modal-content .inputT p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .modal-content .inputT label {
+    font-size: 1rem;
+  }
+
+  .modal-content .inputT input {
+    font-size: 0.9rem;
+  }
+
+  .submitModal,
+  .backModal {
+    font-size: 0.8rem;
+  }
+}
